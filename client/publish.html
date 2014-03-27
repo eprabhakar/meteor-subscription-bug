@@ -1,0 +1,23 @@
+<head>
+  <title>Publish</title>
+</head>
+
+<body>
+  {{> hello}}
+  {{> placeslist}} 
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" id='states' value="states" />
+  <input type="button" id='countries' value="countries" />
+</template>
+
+<template name="placeslist">
+ <ul>
+  {{#each places}}
+   <li> {{name}} ---- {{type}} </li>
+  {{/each}} 
+ </ul> 
+</template>
